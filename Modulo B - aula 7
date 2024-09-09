@@ -1,0 +1,52 @@
+<!-- Operadores (parte 1) aula 7-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Operadores </h1>
+    <h2> Operadores Aritméticos </h2>
+    <strong>
+        <p> + , - , * , / , % , **</p>
+    </strong>
+    <h3>Ordem de Precedência dos Operadores</h3>
+    <p> () (parenteses), <br>
+        ** (potencia), <br>
+        * (multiplicação), / (divisão) , % (Resto da divisão ou móodulo), <br>
+        + - (somas e subtrações).
+    </p>
+    <h3> Exemplos: </h3>
+    <p style="font-family: 'Courier New', Courier, monospace;"> var a = 5 + 3 = 8 <br>
+        var b = a % 5 = 3 <br>
+        var c = 5 * b ** 2 = 45 <br>
+        var d = 10 - 2 / d = 6<br>
+        var e = 6 * 2 / d = 2 <br>
+        var f = b % e + 4 / e = 3
+    </p>
+    <h3> Auto atribuição de variáveis</h3>
+    <p> Exemplo: <br>
+        var n = 3 <br>
+        n =+ 4 = 7 <br>
+        n -= 5 = 2 <br>
+        n *= 4 = 8 <br>
+        n /= 2 = 4
+    </p>
+    <h3> Incremento </h3>
+    <p> É igual a atribuição a cima, porém com uma sintaxe diferente, exemplo: <br>
+        var n = 3 <br>
+        n ++ ou n -- <br>
+        5 e 2
+    </p>
+</body>
+
+</html>
