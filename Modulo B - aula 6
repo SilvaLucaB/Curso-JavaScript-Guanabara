@@ -1,0 +1,128 @@
+<!--EXERCÍCIO 2 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação.de.Dados</title>
+    <style>
+        body {
+            background-color: rgb(58, 131, 199);
+            color: white;
+            font: normal 25pt Arial;
+            /* COMENTÁRIO EM CSS*/
+        }
+    </style> <!-- Parte de CSS só pra exemplo, pois a mesma é feita em outro arquivo. -->
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <!-- Aqui abaixo começa a parte de JS (interação)-->
+    <!-- Para comentar em JS usar // para 1 linha e
+      /* \* para mais de 1 linha-->
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        //Vai realizar essa pergunta e guardar o resultado na variável nome.
+        window.alert('É um prazer te conhecer, ' + nome) //CONCATENAÇÃO
+    </script>
+</body>
+
+</html>
+
+
+<!--EXERCÍCIO 3 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação.de.Dados</title>
+    <style>
+        body {
+            background-color: rgb(58, 131, 199);
+            color: white;
+            /* COMENTÁRIO EM CSS*/
+            font: normal 15pt Arial;
+        }
+
+        h1 {
+            color: rgb(212, 210, 44);
+        }
+
+        h2 {
+            color: aquamarine;
+        }
+    </style> <!-- Parte de CSS só pra exemplo, pois a mesma é feita em outro arquivo. -->
+</head>
+
+<body>
+    <h1> CONCATENAÇÃO E SOMA DE NÚMEROS </h1>
+    <!-- Para comentar em JS usar // para 1 linha e
+      /* \* para mais de 1 linha-->
+
+    <p>
+        NUMBER + NUMBER = ADIÇÃO | STRING + STRING == CONCATENAÇÃO <br>
+    </p>
+    <h2> Exemplo de Soma de 2 inputs </h2>
+    <p>
+        var n1 = window.prompt('Digite um número: ') <br>
+        var n2 = window.prompt('Digite outro número: ') <br>
+        var soma = n1 + n2 <br>
+        window.alert('A soma vale ' + soma) <br>
+        <br> Nesse caso se eu digitasse 6, e depois 4, o return seria 64.<br>
+
+        <br> <strong>
+            PS: Isso acontece pois O WINDOW PROMPT sempre retorna STRING, então será necessário <br>
+            fazer a conversão para Number. <br>
+        </strong>
+        Conversão para números Inteiros: <br>
+        Number.parseInt(n) <br>
+        Conversão para Real: <br>
+        Number.parseFloat(n) <br>
+
+        <br>
+        Na prática: <br>
+
+        var n1 <strong>Number.parseInt</strong> = (window.prompt('Digite um número: ')) <br>
+        OU <br>
+        var n2 <strong>Number.parseFloat</strong> = (window.prompt('Digite outro número: '))
+    </p>
+
+    <script> //Resultado Final : 
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+        soma = n1 + n2
+        window.alert('A soma desses valores é ' + soma)
+        //Exemplo: n1 = 3 e n2 = 6, soma == 9
+
+        //window.alert('A soma desses valores é ' + String(soma)) ou
+        //window.alert('A soma desses valores é ' + soma.toString())
+    </script>
+
+    <!-- Pode usar apenas o Number(n) e o parceiro ai se vira pra desenrolar-->
+    <!-- Exemplo: 
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite outro número'))
+        soma = n1 + n2
+        window.alert('A soma desses valores é ' + soma)
+        
+        PS: nesse caso se digitar 8 + 3.5 o resultado exibido será 11.5 -->
+    <h2> Convertendo Number para String </h2>
+    <p>
+        String(n) <br>
+        OU <br>
+        n.toString() <br>
+        <!--Exemplo na linha 59 -->
+    </p>
+    <h2> Concatenando diferentes tipos de Dados com Template String</h2>
+    <p> Utilizar a CRASE ' | ' e o Placeholder ($) no lugar do +, exemplo: <br>
+        'O aluno $(nome) com $(idade) esta com nota $(média) de média.'
+    </p>
+</body>
+<!-- 27 minutos -->
+
+</html>
+
